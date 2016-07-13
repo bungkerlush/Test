@@ -15,6 +15,18 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+      
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>3.0.1</version>
+        <configuration>
+        	<effort>max</effort>
+        	<threshold>Low</threshold>
+        	<failOnError>true</failOnError>
+        </configuration>
+      </plugin>
+      
     </plugins>
   </build>
 </project>
